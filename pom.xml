@@ -11,6 +11,16 @@
     <modules>
         <module>Sorts</module>
         <module>Array</module>
+        <module>LinkedList</module>
+        <module>HashTable</module>
+        <module>String</module>
+        <module>DoublePointer</module>
+        <module>StackQueue</module>
+        <module>BinaryTree</module>
+        <module>Backtracking</module>
+        <module>Greedy</module>
+        <module>DynamicProgramming</module>
+        <module>MonotonicStack</module>
     </modules>
 
     <dependencies>
