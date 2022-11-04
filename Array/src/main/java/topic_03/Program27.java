@@ -1,7 +1,7 @@
 package topic_03;
 
 /**
- * 移除元素，双指针法实现
+ * 移除元素，双指针
  */
 public class Program27 {
 
