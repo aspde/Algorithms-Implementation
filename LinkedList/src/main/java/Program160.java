@@ -1,7 +1,3 @@
-package topic_07;
-
-import topic_05.Program24;
-
 /**
  * 链表相交
  */

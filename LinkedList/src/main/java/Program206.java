@@ -1,7 +1,3 @@
-package topic_04;
-
-import topic_02.Program203;
-
 /**
  * 反转链表，高频
  */

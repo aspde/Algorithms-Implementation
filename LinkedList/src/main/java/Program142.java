@@ -1,9 +1,7 @@
-package topic_08;
-
 /**
- * 环形链表 I
+ * 环形链表 II
  */
-public class Program141 {
+public class Program142 {
 
     public class ListNode {
         int val;
@@ -13,7 +11,7 @@ public class Program141 {
         ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
 
-    public boolean hasCycle(ListNode head) {
+    public ListNode detectCycle(ListNode head) {
 
         ListNode slow = head;
         ListNode fast = head;
@@ -22,9 +20,14 @@ public class Program141 {
             slow = slow.next;
             fast = fast.next.next;
             if(slow == fast) {
-                return true;
+                slow = head;
+                while(slow != fast) {
+                    slow = slow.next;
+                    fast = fast.next;
+                }
+                return slow;
             }
         }
-        return false;
+        return null;
     }
 }

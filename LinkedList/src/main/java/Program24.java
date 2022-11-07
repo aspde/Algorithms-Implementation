@@ -1,7 +1,3 @@
-package topic_05;
-
-import topic_04.Program206;
-
 /**
  * 两两交换链表中的节点
  */
