@@ -1,5 +1,3 @@
-package topic_06;
-
 import java.util.ArrayList;
 import java.util.List;
 

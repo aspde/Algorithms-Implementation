@@ -1,5 +1,3 @@
-package topic_06;
-
 /**
  * 模拟过程，高频
  */
@@ -31,7 +29,7 @@ public class Program59 {
             for (int i = right; i >= left; i--) {
                 result[down][i] = count++;
             }
-            if(--down>up) {
+            if(--down<up) {
                 break;
             }
             for (int i = down; i >= up; i--) {

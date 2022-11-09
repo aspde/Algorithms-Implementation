@@ -1,5 +1,3 @@
-package topic_02;
-
 /**
  * 搜索插入位置 二分查找法 时间复杂度为 O(log n)
  * 当left > right时循环失效
