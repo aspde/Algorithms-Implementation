@@ -2,13 +2,6 @@
  * 移除链表元素，设置虚拟头节点，统一操作
  */
 public class Program203 {
-      public class ListNode {
-          int val;
-          ListNode next;
-          ListNode() {}
-          ListNode(int val) { this.val = val; }
-          ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-      }
 
     public ListNode removeElements(ListNode head, int val) {
 
