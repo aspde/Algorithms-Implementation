@@ -1,5 +1,6 @@
+
 /**
- * 移除元素，双指针
+ * 移除元素
  */
 public class Program27 {
 

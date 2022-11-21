@@ -1,6 +1,6 @@
+
 /**
- * 二分查找法
- * 要注意细节问题，如left要<=right，不然如果数组是5你查找5会返回-1，另外比较完之后right是mid-1，lift是mid+1，需要注意。
+ * 二分查找
  */
 public class Program704 {
 

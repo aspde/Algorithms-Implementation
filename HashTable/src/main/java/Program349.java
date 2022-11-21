@@ -1,6 +1,9 @@
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * 两个数组的交集
+ */
 public class Program349 {
 
     public int[] intersection(int[] nums1, int[] nums2) {
