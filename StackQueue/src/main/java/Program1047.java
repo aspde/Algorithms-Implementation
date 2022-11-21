@@ -1,5 +1,3 @@
-import java.util.ArrayDeque;
-import java.util.Deque;
 
 /**
  * 删除字符串中的所有相邻重复项

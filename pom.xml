@@ -14,7 +14,6 @@
         <module>LinkedList</module>
         <module>HashTable</module>
         <module>String</module>
-        <module>DoublePointer</module>
         <module>StackQueue</module>
         <module>BinaryTree</module>
         <module>Backtracking</module>

@@ -3,7 +3,7 @@
  */
 public class Program206 {
 
-    // 双指针解法
+    // 双指针解法（迭代）
     public ListNode reverseList1(ListNode head) {
 
         ListNode pre = null;
