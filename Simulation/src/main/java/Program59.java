@@ -1,7 +1,6 @@
 
 /**
- * 螺旋矩阵 II
- * 模拟过程，高频
+ * 螺旋矩阵 II（高频）
  */
 public class Program59 {
 
