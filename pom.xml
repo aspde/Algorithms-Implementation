@@ -22,6 +22,8 @@
         <module>MonotonicStack</module>
         <module>BitManipulation</module>
         <module>Simulation</module>
+        <module>Graph</module>
+        <module>UnionFind</module>
     </modules>
 
     <dependencies>
