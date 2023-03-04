@@ -1,31 +1,28 @@
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
- * 二叉树的前序遍历
+ * 二叉树的后序遍历
  */
-public class Hot_Program144 {
+public class Basic_Program145 {
 
     // 递归实现
-    public List<Integer> preorderTraversal1(TreeNode root) {
+    public List<Integer> postorderTraversal1(TreeNode root) {
         List<Integer> result = new ArrayList<>();
-        preorder(root, result);
+        postorder(root, result);
         return result;
     }
 
-    private void preorder(TreeNode cur, List<Integer> result){
+    private void postorder(TreeNode cur, List<Integer> result){
         if(cur == null) {
             return;
         }
+        postorder(cur.left, result);
+        postorder(cur.right, result);
         result.add(cur.val);
-        preorder(cur.left, result);
-        preorder(cur.right, result);
     }
 
     // 非递归实现
-    public List<Integer> preorderTraversal2(TreeNode root) {
+    public List<Integer> postorderTraversal2(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         if (root == null){
             return result;
@@ -34,15 +31,16 @@ public class Hot_Program144 {
 
         stack.push(root);
         while(!stack.isEmpty()) {
-            TreeNode treeNode = stack.pop();
+           TreeNode treeNode = stack.pop();
             result.add(treeNode.val);
-            if(treeNode.right != null) {
-                stack.push(treeNode.right);
-            }
             if(treeNode.left != null) {
                 stack.push(treeNode.left);
             }
+            if(treeNode.right != null) {
+                stack.push(treeNode.right);
+            }
         }
+        Collections.reverse(result);
         return result;
     }
 }

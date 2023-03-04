@@ -4,7 +4,7 @@ import java.util.Queue;
 /**
  * 用队列实现栈
  */
-public class Program232 {
+public class Basic_Program232 {
 
     class MyStack {
 

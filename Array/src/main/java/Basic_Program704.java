@@ -2,7 +2,7 @@
 /**
  * 二分查找
  */
-public class Program704 {
+public class Basic_Program704 {
 
     // 左闭右闭版本
     public int search1(int[] nums, int target) {

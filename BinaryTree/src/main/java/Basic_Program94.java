@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 二叉树的中序遍历
  */
-public class Hot_Program94 {
+public class Basic_Program94 {
 
     // 递归实现
     public List<Integer> inorderTraversal1(TreeNode root) {

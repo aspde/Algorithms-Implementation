@@ -2,7 +2,7 @@
 /**
  * 螺旋矩阵 II（高频）
  */
-public class Program59 {
+public class Hot_Program59 {
 
     public int[][] generateMatrix(int n) {
 

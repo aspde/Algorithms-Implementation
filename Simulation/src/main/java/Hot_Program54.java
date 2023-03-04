@@ -4,7 +4,7 @@ import java.util.List;
 /**
  * 螺旋矩阵（高频）
  */
-public class Program54 {
+public class Hot_Program54 {
 
     public List<Integer> spiralOrder(int[][] matrix) {
 

@@ -4,7 +4,7 @@ import java.util.Deque;
 /**
  * 用栈实现队列
  */
-public class Program225 {
+public class Basic_Program225 {
 
     class MyQueue {
 

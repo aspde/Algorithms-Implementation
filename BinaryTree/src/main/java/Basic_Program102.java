@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 二叉树的层序遍历
  */
-public class Program102 {
+public class Basic_Program102 {
 
     // 借助队列实现
     public List<List<Integer>> levelOrder(TreeNode root) {
