@@ -1,28 +1,88 @@
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class BubbleSortTest {
 
+    private final BubbleSort bubbleSort = new BubbleSort();
+
     @Test
-    public void main() {
+    public void bubbleSortEmptyArray() {
+        Integer[] inputArray = {};
+        Integer[] outputArray = bubbleSort.sort(inputArray);
+        Integer[] expectedOutput = {};
+        assertArrayEquals(outputArray, expectedOutput);
+    }
 
-        Integer[] integers = {4, 23, 6, 78, 1, 54, 231, 9, 12};
-        BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.sort(integers);
+    @Test
+    public void bubbleSortSingleIntegerElementArray() {
+        Integer[] inputArray = { 4 };
+        Integer[] outputArray = bubbleSort.sort(inputArray);
+        Integer[] expectedOutput = { 4 };
+        assertArrayEquals(outputArray, expectedOutput);
+    }
 
-        for (int i = 0; i < integers.length - 1; ++i) {
-            assert integers[i] <= integers[i + 1];
-        }
-        System.out.println(Arrays.toString(integers));
-        /* output: [1, 4, 6, 9, 12, 23, 54, 78, 231] */
+    @Test
+    public void bubbleSortSingleStringElementArray() {
+        String[] inputArray = { "s" };
+        String[] outputArray = bubbleSort.sort(inputArray);
+        String[] expectedOutput = { "s" };
+        assertArrayEquals(outputArray, expectedOutput);
+    }
 
-        String[] strings = {"c", "a", "e", "b", "d"};
-        bubbleSort.sort(strings);
-        for (int i = 0; i < strings.length - 1; i++) {
-            assert strings[i].compareTo(strings[i + 1]) <= 0;
-        }
-        System.out.println(Arrays.toString(strings));
-        /* output: [a, b, c, d, e] */
+    @Test
+    public void bubbleSortIntegerArray() {
+        Integer[] inputArray = { 4, 23, -6, 78, 1, 54, 23, -6, -231, 9, 12 };
+        Integer[] outputArray = bubbleSort.sort(inputArray);
+        Integer[] expectedOutput = {
+                -231,
+                -6,
+                -6,
+                1,
+                4,
+                9,
+                12,
+                23,
+                23,
+                54,
+                78,
+        };
+        assertArrayEquals(outputArray, expectedOutput);
+    }
+
+    @Test
+    public void bubbleSortStringArray() {
+        String[] inputArray = {
+                "cbf",
+                "auk",
+                "ó",
+                "(b",
+                "a",
+                ")",
+                "au",
+                "á",
+                "cba",
+                "auk",
+                "(a",
+                "bhy",
+                "cba",
+        };
+        String[] outputArray = bubbleSort.sort(inputArray);
+        String[] expectedOutput = {
+                "(a",
+                "(b",
+                ")",
+                "a",
+                "au",
+                "auk",
+                "auk",
+                "bhy",
+                "cba",
+                "cba",
+                "cbf",
+                "á",
+                "ó",
+        };
+        assertArrayEquals(outputArray, expectedOutput);
     }
 }

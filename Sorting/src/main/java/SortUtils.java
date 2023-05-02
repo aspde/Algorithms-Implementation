@@ -34,4 +34,18 @@ final class SortUtils {
     public static <T extends Comparable<T>> boolean greater(T firstElement, T secondElement) {
         return firstElement.compareTo(secondElement) > 0;
     }
+
+    /**
+     * 检查数组是否按升序排序
+     * @param array 检查的数组
+     * @return 如果数组按升序排序返回true，否则返回false
+     */
+    public static <T extends Comparable<T>> boolean isSorted(T[] array) {
+        for (int i = 1; i < array.length; i++) {
+            if (less(array[i], array[i - 1])) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
