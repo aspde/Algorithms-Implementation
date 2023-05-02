@@ -1,31 +1,37 @@
-/**
- * 工具方法类
- */
 final class SortUtils {
 
     /**
-     * 数组交换位置的辅助方法
+     * 数组中在给定的位置交换两个元素
      *
      * @param array 想要交换元素的数组
-     * @param idx   第一个元素的数组下标
-     * @param idy   第二个元素的数组下标
+     * @param i   交换的第一个元素的数组下标
+     * @param j   交换的第二个元素的数组下标
      */
-    static <T> boolean swap(T[] array, int idx, int idy) {
-        T swap = array[idx];
-        array[idx] = array[idy];
-        array[idy] = swap;
-        return true;
+    public static <T> void swap(T[] array, int i, int j) {
+        T swap = array[i];
+        array[i] = array[j];
+        array[j] = swap;
     }
 
     /**
-     * 检查第一个元素是否比第二个元素大的方法
+     * 比较两个元素判断第一个是否比第二个小
      *
-     * @param v 第一个元素
-     * @param w 第二个元素
-     * @return 如果第一个元素比第二个元素大返回true
+     * @param firstElement 第一个元素
+     * @param secondElement 第二个元素
+     * @return 如果第一个元素比第二个元素小返回true，否则返回false
      */
-    static <T extends Comparable<T>> boolean greater(T v, T w) {
-        return v.compareTo(w) > 0;
+    public static <T extends Comparable<T>> boolean less(T firstElement, T secondElement) {
+        return firstElement.compareTo(secondElement) < 0;
     }
 
+    /**
+     * 比较两个元素判断第一个是否比第二个大
+     *
+     * @param firstElement 第一个元素
+     * @param secondElement 第二个元素
+     * @return 如果第一个元素比第二个元素大返回true，否则返回false
+     */
+    public static <T extends Comparable<T>> boolean greater(T firstElement, T secondElement) {
+        return firstElement.compareTo(secondElement) > 0;
+    }
 }
