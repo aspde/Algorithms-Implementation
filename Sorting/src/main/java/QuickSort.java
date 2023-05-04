@@ -1,7 +1,7 @@
 public class QuickSort implements SortAlgorithm {
 
     /**
-     * 快速排序算法实现
+     * 双路快速排序算法实现
      */
     @Override
     public <T extends Comparable<T>> T[] sort(T[] array) {
