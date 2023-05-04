@@ -1,12 +1,7 @@
-
 public class InsertionSort implements SortAlgorithm {
 
     /**
-     * 泛型插入排序算法实现
-     *
-     * @param array 未排序的数组
-     * @param <T>      数组中元素的类型
-     * @return 排序后的数组
+     * 插入排序算法实现
      */
     @Override
     public <T extends Comparable<T>> T[] sort(T[] array) {

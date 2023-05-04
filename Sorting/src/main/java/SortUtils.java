@@ -1,3 +1,5 @@
+import java.util.List;
+
 final class SortUtils {
 
     /**
@@ -43,6 +45,20 @@ final class SortUtils {
     public static <T extends Comparable<T>> boolean isSorted(T[] array) {
         for (int i = 1; i < array.length; i++) {
             if (less(array[i], array[i - 1])) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * 检查集合是否按升序排序
+     * @param list 检查的集合
+     * @return 如果数组按升序排序返回true，否则返回false
+     */
+    public static <T extends Comparable<T>> boolean isSorted(List<T> list) {
+        for (int i = 1; i < list.size(); i++) {
+            if (less(list.get(i), list.get(i - 1))) {
                 return false;
             }
         }
