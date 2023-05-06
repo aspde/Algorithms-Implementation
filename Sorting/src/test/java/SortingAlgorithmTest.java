@@ -51,8 +51,8 @@ public abstract class SortingAlgorithmTest {
 
     @Test
     void shouldAcceptWhenListWithAllPositiveValuesIsPassed() {
-        Integer[] array = new Integer[]{60, 7, 55, 9, 999, 3};
-        Integer[] expected = new Integer[]{3, 7, 9, 55, 60, 999};
+        Integer[] array = new Integer[]{1, 2, 3, 4, 8, 5, 10, 6, 7};
+        Integer[] expected = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 10};
 
         Integer[] sorted = getSortAlgorithm().sort(array);
 

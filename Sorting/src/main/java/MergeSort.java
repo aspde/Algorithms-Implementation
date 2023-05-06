@@ -22,20 +22,23 @@ public class MergeSort implements SortAlgorithm {
         }
     }
 
+    /**
+     * 合并两个有序队列
+     */
     @SuppressWarnings("unchecked")
     private <T extends Comparable<T>> void merge(T[] array, int left, int mid, int right) {
         System.arraycopy(array, left, aux, left, right + 1 - left);
 
         int i = left, j = mid + 1;
         for (int k = left; k <= right; k++) {
-            if (j > right) {
+            if (i > mid) {
+                array[k] = (T) aux[j++];
+            } else if (j > right) {
                 array[k] = (T) aux[i++];
-            } else if (i > mid) {
-                array[k] = (T) aux[j++];
-            } else if (SortUtils.less(aux[j], aux[i])) {
-                array[k] = (T) aux[j++];
+            } else if (SortUtils.less(aux[i], aux[j])) {
+                array[k] = (T) aux[i++];
             } else {
-                array[k] = (T) aux[i++];
+                array[k] = (T) aux[j++];
             }
         }
     }

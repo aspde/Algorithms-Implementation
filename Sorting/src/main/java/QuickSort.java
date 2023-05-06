@@ -13,7 +13,7 @@ public class QuickSort implements SortAlgorithm {
         if(left < right) {
             int pivot = randomPartition(array, left, right);
             doSort(array, left, pivot - 1);
-            doSort(array, pivot, right);
+            doSort(array, pivot + 1, right);
         }
     }
 
@@ -22,27 +22,32 @@ public class QuickSort implements SortAlgorithm {
      */
     private <T extends Comparable<T>> int randomPartition(T[] array, int left, int right) {
         int randomIndex = left + (int) (Math.random() * (right - left + 1));
-        SortUtils.swap(array, randomIndex, right);
+        SortUtils.swap(array, randomIndex, left);
         return partition(array, left, right);
     }
 
     private <T extends Comparable<T>> int partition(T[] array, int left, int right) {
-        int mid = (left + right) >>> 1;
-        T pivot = array[mid];
+        T pivot = array[left];// 选择最左面的元素作为分界点
+        int i = left + 1;// 跳过分界点
+        int j = right;
 
-        while(left <= right) {
-            while(SortUtils.less(array[left], pivot)) {
-                ++left;
+        while(i <= j) {
+            // 从左到右找到第一个大于等于分界点的元素
+            while(i <= right && SortUtils.less(array[i], pivot)) {
+                ++i;
             }
-            while(SortUtils.less(pivot, array[right])) {
-                --right;
+            // 从右到左找到第一个小于等于分界点的元素
+            while(j >= left + 1 && SortUtils.less(pivot, array[j])) {
+                --j;
             }
-            if(left <= right) {
-                SortUtils.swap(array, left, right);
-                ++left;
-                --right;
+            if(i <= j) {
+                SortUtils.swap(array, i, j);
+                ++i;
+                --j;
             }
         }
-        return left;
+        // 将分界点放到正确的位置上
+        SortUtils.swap(array, left, j);
+        return j;
     }
 }
