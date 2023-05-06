@@ -3,7 +3,7 @@ package leetcode;
 /**
  * 数组中的第K个最大元素
  */
-public class Program215 {
+public class Hot_Program215 {
 
     public int findKthLargest(int[] nums, int k) {
         int target = nums.length - k;

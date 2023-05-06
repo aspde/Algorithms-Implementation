@@ -2,7 +2,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * 滑动窗口最大值，单调队列
+ * 滑动窗口最大值
  */
 public class Program239 {
 

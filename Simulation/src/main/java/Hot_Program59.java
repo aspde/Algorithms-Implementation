@@ -1,6 +1,6 @@
 
 /**
- * 螺旋矩阵 II（高频）
+ * 螺旋矩阵 II
  */
 public class Hot_Program59 {
 

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 螺旋矩阵（高频）
+ * 螺旋矩阵
  */
 public class Hot_Program54 {
 

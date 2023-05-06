@@ -1,7 +1,7 @@
 /**
  * 翻转二叉树
  */
-public class Program226 {
+public class Basic_Program226 {
 
     // 前序遍历翻转
     public TreeNode invertTree(TreeNode root) {

@@ -1,8 +1,8 @@
 
 /**
- * 反转链表，高频
+ * 反转链表
  */
-public class Program206 {
+public class Basic_Program206 {
 
     // 双指针解法（迭代）
     public ListNode reverseList1(ListNode head) {

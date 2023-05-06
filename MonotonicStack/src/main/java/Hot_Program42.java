@@ -3,7 +3,7 @@ import java.util.ArrayDeque;
 /**
  * 接雨水
  */
-public class Program42 {
+public class Hot_Program42 {
 
     // 单调栈解法
     public int trap(int[] height) {

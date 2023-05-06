@@ -1,6 +1,6 @@
 
 /**
- * 重复的子字符串，KMP算法
+ * 重复的子字符串
  */
 public class Program459 {
 
