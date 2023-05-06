@@ -10,8 +10,7 @@ public class HeapSort implements SortAlgorithm {
         // 大根堆转换成递增数组，不开辟额外空间
         while (n > 1) {
             swap(array, 1, n--);
-            // 根节点下沉，维护大根堆
-            siftDown(array, 1, n);
+            siftDown(array, 1, n);// 根节点下沉，维护大根堆
         }
         return array;
     }
