@@ -1,3 +1,5 @@
+package basic;
+
 public class MergeSort implements SortAlgorithm {
 
     @SuppressWarnings("rawtypes")

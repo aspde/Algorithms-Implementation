@@ -1,6 +1,8 @@
+package basic;
+
 import java.util.List;
 
-final class SortUtils {
+public final class SortUtils {
 
     /**
      * 数组中在给定的位置交换两个元素

@@ -1,3 +1,5 @@
+package basic;
+
 public class SelectionSort implements SortAlgorithm {
 
     /**

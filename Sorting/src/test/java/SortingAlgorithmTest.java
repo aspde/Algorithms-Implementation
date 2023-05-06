@@ -1,3 +1,6 @@
+import basic.SortAlgorithm;
+import basic.SortUtils;
+import basic.SortUtilsRandomGenerator;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

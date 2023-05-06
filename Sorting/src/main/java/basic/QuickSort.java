@@ -1,3 +1,5 @@
+package basic;
+
 public class QuickSort implements SortAlgorithm {
 
     /**
@@ -46,8 +48,7 @@ public class QuickSort implements SortAlgorithm {
                 --j;
             }
         }
-        // 将分界点放到正确的位置上
-        SortUtils.swap(array, left, j);
+        SortUtils.swap(array, left, j);// 将分界点放到正确的位置上
         return j;
     }
 }
