@@ -4,7 +4,7 @@ import java.util.Deque;
 /**
  * 滑动窗口最大值
  */
-public class Program239 {
+public class Hot_Program239 {
 
     public static int[] maxSlidingWindow(int[] nums, int k) {
 
