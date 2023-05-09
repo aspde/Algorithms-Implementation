@@ -17,7 +17,6 @@ public class Program39 {
     }
 
     private void backtracking(int[] candidates, int target, int sum, int startIndex) {
-
         if(sum == target) {
             result.add(new ArrayList<>(path));
             return;

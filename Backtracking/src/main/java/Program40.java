@@ -20,7 +20,6 @@ public class Program40 {
     }
 
     private void backTracking(int[] candidates, int target, int startIndex) {
-
         if(sum == target) {
             result.add(new ArrayList<>(path));
             return;

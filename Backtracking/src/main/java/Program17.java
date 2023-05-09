@@ -20,7 +20,6 @@ public class Program17 {
     StringBuilder temp = new StringBuilder();
 
     private void backTracking(String[] numString, String digits, int num) {
-
         if(num == digits.length()) {
             result.add(temp.toString());
             return;

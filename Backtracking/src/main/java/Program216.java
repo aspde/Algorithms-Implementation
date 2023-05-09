@@ -10,16 +10,14 @@ public class Program216 {
     List<Integer> path = new ArrayList<>();
 
     public List<List<Integer>> combinationSum3(int k, int n) {
-        backTracking(k, n, 1, 0);
+        backtracking(k, n, 1, 0);
         return result;
     }
 
-    private void backTracking(int k, int targetSum, int startIndex, int sum) {
-
+    private void backtracking(int k, int targetSum, int startIndex, int sum) {
         if(sum > targetSum) {
             return;
         }
-
         if(sum == targetSum && path.size() == k) {
             result.add(new ArrayList<>(path));
             return;
@@ -27,7 +25,7 @@ public class Program216 {
 
         for (int i = startIndex; i <= 9 - (k - path.size()) + 1; i++) {
             path.add(i);
-            backTracking(k, targetSum, i + 1, sum + i);
+            backtracking(k, targetSum, i + 1, sum + i);
             path.remove(path.size() - 1);
         }
     }
