@@ -5,7 +5,6 @@
 public class Hot_Program59 {
 
     public int[][] generateMatrix(int n) {
-
         int[][] result = new int[n][n];
         int count = 1;
         int left = 0;
@@ -14,7 +13,6 @@ public class Hot_Program59 {
         int down = n-1;
 
         while(true) {
-
             for (int i = left; i <= right; i++) {
                 result[up][i] = count++;
             }
@@ -40,7 +38,6 @@ public class Hot_Program59 {
                 break;
             }
         }
-
         return result;
     }
 }

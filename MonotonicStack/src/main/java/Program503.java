@@ -7,7 +7,6 @@ import java.util.Arrays;
 public class Program503 {
 
     public int[] nextGreaterElements(int[] nums) {
-
         ArrayDeque<Integer> stack = new ArrayDeque<>();
         int size = nums.length;
         int[] result = new int[size];

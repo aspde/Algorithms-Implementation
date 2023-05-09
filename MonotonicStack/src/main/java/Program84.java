@@ -7,7 +7,6 @@ public class Program84 {
 
     // 单调栈解法
     public int largestRectangleArea(int[] heights) {
-
         int result = 0;
         ArrayDeque<Integer> stack = new ArrayDeque<>();
 
@@ -29,7 +28,6 @@ public class Program84 {
             }
             stack.push(i);
         }
-
         return result;
     }
 }

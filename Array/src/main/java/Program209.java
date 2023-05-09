@@ -5,7 +5,6 @@
 public class Program209 {
 
     public int minSubArrayLen(int target, int[] nums) {
-
         int i = 0;
         int sum = nums[0];
         int result = Integer.MAX_VALUE;

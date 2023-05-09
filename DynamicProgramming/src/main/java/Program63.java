@@ -5,7 +5,6 @@
 public class Program63 {
 
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
-
         int m = obstacleGrid.length;
         int n = obstacleGrid[0].length;
         int[][] dp = new int[m][n];

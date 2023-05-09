@@ -5,7 +5,6 @@
 public class Program35 {
 
     public int searchInsert(int[] nums, int target) {
-
         int left = 0;
         int right = nums.length - 1;
         while(left <= right) {

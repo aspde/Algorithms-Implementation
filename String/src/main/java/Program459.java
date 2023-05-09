@@ -5,7 +5,6 @@
 public class Program459 {
 
     public boolean repeatedSubstringPattern(String s) {
-
         if(s.length() == 0) {
             return false;
         }

@@ -7,16 +7,13 @@ import java.util.List;
 public class Program54 {
 
     public List<Integer> spiralOrder(int[][] matrix) {
-
         List<Integer> result = new ArrayList<>();
-
         int up = 0;
         int down = matrix.length - 1;
         int left = 0;
         int right = matrix[0].length - 1;
 
         while(true) {
-
             for (int i = left; i <= right ; i++) {
                 result.add(matrix[up][i]);
             }
@@ -42,7 +39,6 @@ public class Program54 {
                 break;
             }
         }
-
         return result;
     }
 }

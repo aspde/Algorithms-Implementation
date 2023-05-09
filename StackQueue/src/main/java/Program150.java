@@ -7,7 +7,6 @@ import java.util.Deque;
 public class Program150 {
 
     public int evalRPN(String[] tokens) {
-
         Deque<Integer> stack = new ArrayDeque<>();
         // 减法，除法要调换顺序
         for (String str : tokens) {
@@ -25,7 +24,6 @@ public class Program150 {
                 stack.push(Integer.valueOf(str));
             }
         }
-
         return stack.pop();
     }
 }

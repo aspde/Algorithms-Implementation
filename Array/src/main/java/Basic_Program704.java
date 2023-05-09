@@ -6,7 +6,6 @@ public class Basic_Program704 {
 
     // 左闭右闭版本
     public int search1(int[] nums, int target) {
-
         int left = 0;
         int right = nums.length - 1;
         while(left <= right) {
@@ -25,7 +24,6 @@ public class Basic_Program704 {
 
     // 左闭右开版本
     public int search2(int[] nums, int target) {
-
         int left = 0;
         int right = nums.length;
         while(left < right) {

@@ -5,7 +5,6 @@
 public class Program19 {
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
-
         ListNode dummyHead = new ListNode();
         dummyHead.next = head;
         ListNode slow = dummyHead;

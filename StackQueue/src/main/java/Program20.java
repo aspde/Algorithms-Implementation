@@ -7,9 +7,7 @@ import java.util.LinkedList;
 public class Program20 {
 
     public boolean isValid(String s) {
-
         Deque<Character> stack = new LinkedList<>();
-
         for (Character ch : s.toCharArray()) {
             if(ch == '(') {
                 stack.push(')');
@@ -23,7 +21,6 @@ public class Program20 {
                 return false;
             }
         }
-
         return stack.isEmpty();
     }
 }

@@ -5,7 +5,6 @@
 public class Program203 {
 
     public ListNode removeElements(ListNode head, int val) {
-
         ListNode dummyHead = new ListNode();
         dummyHead.next = head;
         ListNode cur = dummyHead;

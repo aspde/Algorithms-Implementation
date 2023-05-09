@@ -5,7 +5,6 @@
 public class Program111 {
 
     public int minDepth(TreeNode root) {
-
         if(root == null) {
             return 0;
         }

@@ -8,13 +8,11 @@ import java.util.List;
 public class Program18 {
 
     public List<List<Integer>> fourSum(int[] nums, int target) {
-
         List<List<Integer>> result = new ArrayList<>();
         // 对数组排序
         Arrays.sort(nums);
 
         for (int i = 0; i < nums.length; i++) {
-
             if(nums[i] >= 0 && nums[i] > target) {
                 return result;
             }
@@ -24,7 +22,6 @@ public class Program18 {
             }
 
             for (int j = i + 1; j < nums.length; j++) {
-
                 if(nums[j] >= 0 && nums[i] + nums[j] > target) {
                     return result;
                 }
@@ -35,9 +32,7 @@ public class Program18 {
 
                 int left = j + 1;
                 int right = nums.length - 1;
-
                 while(left < right) {
-
                     int sum = nums[i] + nums[j] + nums[left] + nums[right];
                     if(sum > target) {
                         right--;
@@ -59,7 +54,6 @@ public class Program18 {
                 }
             }
         }
-
         return result;
     }
 }

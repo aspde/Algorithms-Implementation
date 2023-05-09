@@ -10,7 +10,6 @@ public class Program101 {
     }
 
     private boolean compare(TreeNode left, TreeNode right) {
-
         if(left == null && right != null) {
             return false;
         } else if (left != null && right == null) {

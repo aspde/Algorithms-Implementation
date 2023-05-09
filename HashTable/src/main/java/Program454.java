@@ -7,7 +7,6 @@ import java.util.Map;
 public class Program454 {
 
     public int fourSumCount(int[] nums1, int[] nums2, int[] nums3, int[] nums4) {
-
         Map<Integer, Integer> map = new HashMap();
         int count = 0;
 
@@ -20,7 +19,6 @@ public class Program454 {
                 }
             }
         }
-
         for (int i : nums3) {
             for (int j : nums4) {
                 if(map.containsKey(-(i + j))) {
@@ -28,7 +26,6 @@ public class Program454 {
                 }
             }
         }
-
         return count;
     }
 }

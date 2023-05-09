@@ -5,7 +5,6 @@
 public class Program104 {
 
     public int maxDepth(TreeNode root) {
-
         if (root == null) {
             return 0;
         }

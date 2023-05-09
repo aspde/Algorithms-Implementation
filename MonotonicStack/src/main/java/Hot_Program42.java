@@ -7,7 +7,6 @@ public class Hot_Program42 {
 
     // 单调栈解法
     public int trap(int[] height) {
-
         int sum = 0;
         ArrayDeque<Integer> stack = new ArrayDeque<>();
 
@@ -22,7 +21,6 @@ public class Hot_Program42 {
             }
             stack.push(i);
         }
-
         return sum;
     }
 }

@@ -7,7 +7,6 @@ import java.util.Deque;
 public class Hot_Program239 {
 
     public static int[] maxSlidingWindow(int[] nums, int k) {
-
         Deque<Integer> deque = new ArrayDeque<>();
         int[] result = new int[nums.length - k + 1];
         int index = 0;

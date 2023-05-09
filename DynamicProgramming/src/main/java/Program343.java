@@ -5,7 +5,6 @@
 public class Program343 {
 
     public int integerBreak(int n) {
-        
         int[] dp = new int[n + 1];
         dp[0] = 0;
         dp[1] = 0;

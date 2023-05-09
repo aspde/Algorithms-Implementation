@@ -6,7 +6,6 @@ public class Basic_Program206 {
 
     // 双指针解法（迭代）
     public ListNode reverseList1(ListNode head) {
-
         ListNode pre = null;
         ListNode cur = head;
         ListNode temp = null;
@@ -22,12 +21,10 @@ public class Basic_Program206 {
 
     // 递归解法
     public ListNode reverseList2(ListNode head) {
-
         return reverse(null, head);
     }
 
     private ListNode reverse(ListNode pre, ListNode cur) {
-
         if(cur == null) {
             return pre;
         }
