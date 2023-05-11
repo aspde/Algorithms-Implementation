@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 全排列 II
  */
-public class Program47 {
+public class Hot_Program47 {
 
     List<List<Integer>> result = new ArrayList<>();
     LinkedList<Integer> path = new LinkedList<>();
