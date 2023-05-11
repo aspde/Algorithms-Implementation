@@ -1,5 +1,8 @@
 package leetcode;
 
+/**
+ * 合并 K 个升序链表
+ */
 public class Hot_Program23 {
 
     public ListNode mergeKLists(ListNode[] lists) {

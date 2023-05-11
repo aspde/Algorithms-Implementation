@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * 三数之和
  */
-public class Program15 {
+public class Hot_Program15 {
 
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();

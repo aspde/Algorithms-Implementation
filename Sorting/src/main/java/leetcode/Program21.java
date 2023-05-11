@@ -1,5 +1,8 @@
 package leetcode;
 
+/**
+ * 合并两个有序链表
+ */
 public class Program21 {
 
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
