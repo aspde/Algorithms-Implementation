@@ -34,13 +34,18 @@ public class Basic_Program144 {
 
         stack.push(root);
         while(!stack.isEmpty()) {
-            TreeNode treeNode = stack.pop();
-            result.add(treeNode.val);
-            if(treeNode.right != null) {
-                stack.push(treeNode.right);
-            }
-            if(treeNode.left != null) {
-                stack.push(treeNode.left);
+            TreeNode node = stack.pop();
+            if (node != null) {
+                if (node.right != null) {
+                    stack.push(node.right);
+                }
+                if (node.left != null) {
+                    stack.push(node.left);
+                }
+                stack.push(node);
+                stack.push(null);
+            } else {
+                result.add(stack.pop().val);
             }
         }
         return result;

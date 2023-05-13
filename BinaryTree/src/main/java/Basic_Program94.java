@@ -32,15 +32,20 @@ public class Basic_Program94 {
         }
         Deque<TreeNode> stack = new LinkedList<>();
 
-        TreeNode cur = root;
-        while(cur != null || !stack.isEmpty()) {
-            if(cur != null) {
-                stack.push(cur);
-                cur = cur.left;
+        stack.push(root);
+        while(!stack.isEmpty()) {
+            TreeNode node = stack.pop();
+            if (node != null) {
+                if (node.right != null) {
+                    stack.push(node.right);
+                }
+                stack.push(node);
+                stack.push(null);
+                if (node.left != null) {
+                    stack.push(node.left);
+                }
             } else {
-                cur = stack.pop();
-                result.add(cur.val);
-                cur = cur.right;
+                result.add(stack.pop().val);
             }
         }
         return result;

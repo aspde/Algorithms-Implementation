@@ -31,16 +31,20 @@ public class Basic_Program145 {
 
         stack.push(root);
         while(!stack.isEmpty()) {
-           TreeNode treeNode = stack.pop();
-            result.add(treeNode.val);
-            if(treeNode.left != null) {
-                stack.push(treeNode.left);
-            }
-            if(treeNode.right != null) {
-                stack.push(treeNode.right);
+            TreeNode node = stack.pop();
+            if (node != null) {
+                stack.push(node);
+                stack.push(null);
+                if (node.right != null) {
+                    stack.push(node.right);
+                }
+                if (node.left != null) {
+                    stack.push(node.left);
+                }
+            } else {
+                result.add(stack.pop().val);
             }
         }
-        Collections.reverse(result);
         return result;
     }
 }
