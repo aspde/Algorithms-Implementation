@@ -1,17 +1,19 @@
 import java.util.Arrays;
 
 /**
- * 最长连续递增序列
+ * 最长递增子序列
  */
-public class Program674 {
+public class Hot_Program300 {
 
-    public int findLengthOfLCIS(int[] nums) {
+    public int lengthOfLIS(int[] nums) {
         int[] dp = new int[nums.length];
         Arrays.fill(dp, 1);
         int result = 1;
         for (int i = 1; i < nums.length; i++) {
-            if(nums[i - 1] < nums[i]) {
-                dp[i] = dp[i - 1] + 1;
+            for (int j = 0; j < i; j++) {
+                if(nums[j] < nums[i]) {
+                    dp[i] = Math.max(dp[j] + 1, dp[i]);
+                }
             }
             result = Math.max(dp[i], result);
         }
