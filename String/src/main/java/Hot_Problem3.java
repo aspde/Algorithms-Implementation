@@ -3,7 +3,7 @@ import java.util.HashMap;
 /**
  * 无重复字符的最长子串
  */
-public class Problem3 {
+public class Hot_Problem3 {
 
     public int lengthOfLongestSubstring(String s) {
         HashMap<Character, Integer> map = new HashMap<>();
