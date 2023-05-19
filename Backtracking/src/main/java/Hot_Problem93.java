@@ -4,7 +4,7 @@ import java.util.List;
 /**
  * 复原IP地址
  */
-public class Problem93 {
+public class Hot_Problem93 {
 
     List<String> result = new ArrayList<>();
 

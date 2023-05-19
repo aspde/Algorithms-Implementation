@@ -2,7 +2,7 @@
 /**
  * 反转链表 II
  */
-public class Problem92 {
+public class Hot_Problem92 {
 
     public ListNode reverseBetween(ListNode head, int left, int right) {
         ListNode dummyHead = new ListNode();

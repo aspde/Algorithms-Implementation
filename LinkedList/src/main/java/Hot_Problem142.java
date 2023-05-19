@@ -2,7 +2,7 @@
 /**
  * 环形链表 II
  */
-public class Problem142 {
+public class Hot_Problem142 {
 
     public ListNode detectCycle(ListNode head) {
         ListNode slow = head;
