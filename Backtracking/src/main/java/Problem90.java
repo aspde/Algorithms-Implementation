@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * 子集II
+ * 子集 II
  */
 public class Problem90 {
 
