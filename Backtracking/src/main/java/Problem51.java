@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * N 皇后
  */
-public class Hot_Problem51 {
+public class Problem51 {
 
     List<List<String>> result = new ArrayList<>();
 

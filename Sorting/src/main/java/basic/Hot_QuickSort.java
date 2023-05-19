@@ -1,6 +1,6 @@
 package basic;
 
-public class QuickSort implements SortAlgorithm {
+public class Hot_QuickSort implements SortAlgorithm {
 
     /**
      * 双路快速排序算法实现

@@ -3,7 +3,7 @@ package buy_and_sell_stock;
 /**
  * 买卖股票的最佳时机 II
  */
-public class Hot_Problem122 {
+public class Problem122 {
 
     public int maxProfit(int[] prices) {
         int length = prices.length;

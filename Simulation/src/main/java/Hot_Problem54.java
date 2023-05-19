@@ -4,7 +4,7 @@ import java.util.List;
 /**
  * 螺旋矩阵
  */
-public class Problem54 {
+public class Hot_Problem54 {
 
     public List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> result = new ArrayList<>();
