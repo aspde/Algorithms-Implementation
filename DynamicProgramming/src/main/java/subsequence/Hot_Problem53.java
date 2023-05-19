@@ -1,3 +1,4 @@
+package subsequence;
 
 /**
  * 最大子数组和

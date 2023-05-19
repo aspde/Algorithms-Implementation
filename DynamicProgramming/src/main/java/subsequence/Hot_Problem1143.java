@@ -1,3 +1,4 @@
+package subsequence;
 
 /**
  * 最长公共子序列

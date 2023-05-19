@@ -1,3 +1,4 @@
+package subsequence;
 
 /**
  * 不同的子序列
