@@ -1,4 +1,4 @@
-package level_order_traversal;
+package basic;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

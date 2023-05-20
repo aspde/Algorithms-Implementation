@@ -1,4 +1,4 @@
-package level_order_traversal;
+package basic;
 
 public class TreeNode {
 

@@ -1,4 +1,4 @@
-import level_order_traversal.TreeNode;
+package basic;
 
 import java.util.ArrayList;
 import java.util.Deque;
@@ -6,28 +6,28 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * 二叉树的中序遍历
+ * 二叉树的前序遍历
  */
-public class Basic_Problem94 {
+public class Basic_Problem144 {
 
     // 递归实现
-    public List<Integer> inorderTraversal1(TreeNode root) {
+    public List<Integer> preorderTraversal1(TreeNode root) {
         List<Integer> result = new ArrayList<>();
-        inorder(root, result);
+        preorder(root, result);
         return result;
     }
 
-    private void inorder(TreeNode cur, List<Integer> result){
+    private void preorder(TreeNode cur, List<Integer> result){
         if(cur == null) {
             return;
         }
-        inorder(cur.left, result);
         result.add(cur.val);
-        inorder(cur.right, result);
+        preorder(cur.left, result);
+        preorder(cur.right, result);
     }
 
     // 迭代实现
-    public List<Integer> inorderTraversal2(TreeNode root) {
+    public List<Integer> preorderTraversal2(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         if (root == null){
             return result;
@@ -41,11 +41,11 @@ public class Basic_Problem94 {
                 if (node.right != null) {
                     stack.push(node.right);
                 }
-                stack.push(node);
-                stack.push(null);
                 if (node.left != null) {
                     stack.push(node.left);
                 }
+                stack.push(node);
+                stack.push(null);
             } else {
                 result.add(stack.pop().val);
             }

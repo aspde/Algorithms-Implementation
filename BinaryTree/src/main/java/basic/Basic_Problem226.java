@@ -1,4 +1,4 @@
-import level_order_traversal.TreeNode;
+package basic;
 
 import java.util.Deque;
 import java.util.LinkedList;
