@@ -4,7 +4,7 @@
  */
 public class Basic_Problem206 {
 
-    // 双指针解法（迭代）
+    // 迭代实现
     public ListNode reverseList1(ListNode head) {
         ListNode pre = null;
         ListNode cur = head;
@@ -19,7 +19,7 @@ public class Basic_Problem206 {
         return pre;
     }
 
-    // 递归解法
+    // 递归实现
     public ListNode reverseList2(ListNode head) {
         return reverse(null, head);
     }

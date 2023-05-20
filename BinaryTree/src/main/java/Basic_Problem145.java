@@ -23,7 +23,7 @@ public class Basic_Problem145 {
         result.add(cur.val);
     }
 
-    // 非递归实现
+    // 迭代实现
     public List<Integer> postorderTraversal2(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         if (root == null){

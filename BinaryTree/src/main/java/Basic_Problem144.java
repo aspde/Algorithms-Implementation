@@ -26,7 +26,7 @@ public class Basic_Problem144 {
         preorder(cur.right, result);
     }
 
-    // 非递归实现
+    // 迭代实现
     public List<Integer> preorderTraversal2(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         if (root == null){
