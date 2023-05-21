@@ -17,8 +17,8 @@ public class Basic_Problem102 {
             return result;
         }
         Deque<TreeNode> queue = new ArrayDeque();
-        queue.offer(root);
 
+        queue.offer(root);
         while(!queue.isEmpty()) {
             List<Integer> subList = new ArrayList<>();
             int size = queue.size();

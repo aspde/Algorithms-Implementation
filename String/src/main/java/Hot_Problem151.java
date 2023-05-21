@@ -2,7 +2,7 @@
 /**
  * 反转字符串中的单词
  */
-public class Problem151 {
+public class Hot_Problem151 {
 
     public String reverseWords(String s) {
         // 去除多余空格
