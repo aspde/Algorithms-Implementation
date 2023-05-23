@@ -21,20 +21,21 @@ public class Problem113 {
     }
 
     private void pathSumHelper(TreeNode root, int targetSum) {
+        targetSum -= root.val;
         path.add(root.val);
         if(root.left == null && root.right == null) {
-            if(root.val == targetSum) {
+            if(targetSum == 0) {
                 result.add(new ArrayList<>(path));
             }
             return;
         }
 
         if(root.left != null) {
-            pathSumHelper(root.left, targetSum - root.val);
+            pathSumHelper(root.left, targetSum);
             path.removeLast();
         }
         if(root.right != null) {
-            pathSumHelper(root.right, targetSum - root.val);
+            pathSumHelper(root.right, targetSum);
             path.removeLast();
         }
     }
