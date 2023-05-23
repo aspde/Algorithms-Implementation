@@ -1,8 +1,8 @@
 
 /**
- * 二进制数转字符串（选自《程序员面试金典（第 6 版）》）
+ * 二进制数转字符串
  */
-public class PrintBin {
+public class Interview0502 {
 
     public String printBin(double num) {
         StringBuilder sb = new StringBuilder("0.");
