@@ -8,7 +8,7 @@ public class Basic_Problem206 {
     public ListNode reverseList1(ListNode head) {
         ListNode pre = null;
         ListNode cur = head;
-        ListNode temp = null;
+        ListNode temp;
 
         while(cur != null) {
             temp = cur.next;
