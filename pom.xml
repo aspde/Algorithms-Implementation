@@ -9,20 +9,19 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>Sorting</module>
         <module>Array</module>
-        <module>LinkedList</module>
-        <module>HashTable</module>
-        <module>String</module>
-        <module>StackQueue</module>
-        <module>BinaryTree</module>
         <module>Backtracking</module>
-        <module>Greedy</module>
-        <module>DynamicProgramming</module>
-        <module>MonotonicStack</module>
+        <module>BinaryTree</module>
         <module>BitManipulation</module>
-        <module>Simulation</module>
+        <module>DynamicProgramming</module>
         <module>Graph</module>
+        <module>Greedy</module>
+        <module>HashTable</module>
+        <module>LinkedList</module>
+        <module>Simulation</module>
+        <module>Sorting</module>
+        <module>StackQueue</module>
+        <module>String</module>
         <module>UnionFind</module>
     </modules>
 

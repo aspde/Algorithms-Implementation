@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * 子集
  */
-public class Problem78 {
+public class Hot_Problem78 {
 
     List<List<Integer>> result = new ArrayList<>();
     LinkedList<Integer> path = new LinkedList<>();
