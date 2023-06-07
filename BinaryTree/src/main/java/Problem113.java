@@ -23,6 +23,7 @@ public class Problem113 {
     private void pathSumHelper(TreeNode root, int targetSum) {
         targetSum -= root.val;
         path.add(root.val);
+
         if(root.left == null && root.right == null) {
             if(targetSum == 0) {
                 result.add(new ArrayList<>(path));
