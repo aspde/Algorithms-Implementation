@@ -1,3 +1,4 @@
+package knapsack;
 
 /**
  * 单词拆分

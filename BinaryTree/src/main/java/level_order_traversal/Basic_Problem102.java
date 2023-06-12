@@ -1,4 +1,6 @@
-package basic;
+package level_order_traversal;
+
+import basic.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -16,7 +18,7 @@ public class Basic_Problem102 {
         if(root == null) {
             return result;
         }
-        Deque<TreeNode> queue = new ArrayDeque();
+        Deque<TreeNode> queue = new ArrayDeque<>();
 
         queue.offer(root);
         while(!queue.isEmpty()) {

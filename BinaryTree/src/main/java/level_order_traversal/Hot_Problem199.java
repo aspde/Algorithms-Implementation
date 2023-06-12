@@ -17,7 +17,7 @@ public class Hot_Problem199 {
         if(root == null) {
             return result;
         }
-        Deque<TreeNode> queue = new ArrayDeque();
+        Deque<TreeNode> queue = new ArrayDeque<>();
 
         queue.offer(root);
         while(!queue.isEmpty()) {

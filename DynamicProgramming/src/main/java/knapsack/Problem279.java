@@ -1,3 +1,4 @@
+package knapsack;
 
 /**
  * 完全平方数
